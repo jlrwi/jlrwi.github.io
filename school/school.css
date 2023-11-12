@@ -1,0 +1,207 @@
+@import url("../general.css");
+
+.dark {
+background-color: #E4D99E;
+}
+
+body {
+background-color: #FDF1B0;
+font-family: "Times New Roman", Times, serif;
+font-size: medium;
+color: #000000;
+margin: 0;
+padding: 0 0 0 0;
+}
+
+div.col2 {
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+}
+
+h1 {
+border-bottom: 1px solid black;
+font-family: Verdana, Geneva, sans-serif;
+font-size: large;
+font-weight: bold;
+margin: 0;
+padding-bottom: 0;
+padding-top: 1ex;
+page-break-after: avoid;
+text-align: left;
+}
+
+h2 {
+font-size: large;
+font-style: italic;
+font-weight: normal;
+margin: 0;
+padding-top: 0.5ex;
+page-break-after: avoid;
+text-align: left;
+}
+
+p {
+font-size: medium;
+line-height: 100%;
+margin-top: 1ex;
+margin-bottom: 1ex;
+padding: 0;
+vertical-align: top;
+}
+
+#pagetitle {
+font-family: Verdana, Geneva, sans-serif;
+font-size: x-large;
+font-weight: bold;
+margin: 0;
+padding-bottom: 1ex;
+padding-top: 0;
+text-align: center;
+}
+
+table.schedule,
+table.courseplan,
+table.courseorder {
+border: 3px solid black;
+border-collapse: collapse;
+margin: auto;
+}
+
+table.schedule col.timecolumn {
+border-right: 3px solid black;
+text-align: right;
+}
+
+table.schedule col.subjectcolumn {
+text-align: center;
+width: 100px;
+}
+
+table.courseplan td,
+table.courseorder td {
+border: 1px solid black;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+table.courseplan th,
+table.courseorder th {
+border: 1px solid black;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 5px;
+text-align: center;
+}
+
+table.schedule td[rowspan] {
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+}
+ 
+table.schedule td {
+border-right: 1px solid black;
+border-left: 1px solid black;
+/* because col style doesn't work */
+text-align: center;
+vertical-align: middle;
+}
+
+table.schedule th {
+border-bottom: 3px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black;
+font-style: italic;
+font-weight: bold;
+/* because col style doesn't work */
+text-align: center;
+vertical-align: middle;
+}
+
+table.courseplan td:first-of-type {
+text-align: right;
+}
+
+table.schedule td:first-of-type {
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+/* because col style doesn't work */
+text-align: right;
+}
+
+td, th {
+font-family: inherit;
+font-size: inherit;
+text-align: inherit;
+}
+
+ol li {
+margin-top: 1ex;
+}
+
+ol ul {
+margin-left: -3ex;
+}
+
+ul {
+list-style-type: square;
+margin: 0;
+margin-left: -1ex;
+}
+
+ul li {
+margin-bottom: 0;
+margin-top: 0;
+}
+
+ul.indented {
+border-width: 0px;
+margin: 0 0 0 1em;
+padding-left: 0 0 0 1em;
+}
+
+ul.indented li {
+list-style-type: none;
+}
+
+ol.upper-roman {
+list-style: upper-roman;
+margin: 0;
+}
+
+ul.buttonrow {
+padding: 0;
+margin: 6px 0 6px 0;
+text-align: center;
+}
+
+ul.buttonrow li {
+background-color: #E4D99E;
+display: inline;
+list-style-type: none;
+padding: 2px 8px 2px 8px;
+}
+
+ul.buttonrow a {
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+ul.buttonrow a:link, 
+ul.buttonrow a:visited, 
+ul.buttonrow a:active {
+color: black;
+}
+
+ul.buttonrow a:hover {
+text-decoration: underline;
+}
+
+@media print {
+
+ul.buttonrow {display: none;}
+
+}
+

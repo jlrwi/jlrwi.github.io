@@ -1,0 +1,20 @@
+span.tabcenter {
+position:absolute;
+left: 50%;
+}
+
+span.tabright {
+position:absolute;
+right:0px;
+}
+
+th {
+text-align: center;
+}
+
+@media print {
+
+.noprint {display: none;}
+
+}
+
